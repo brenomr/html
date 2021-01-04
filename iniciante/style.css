@@ -1,0 +1,52 @@
+body {
+    
+}
+
+#banner {
+    width: 100%;
+}
+
+.principal{
+    background-color: #cccccc;
+    padding: 30px;
+}
+
+.tituloprincipal{
+    padding-left: 20px;
+}
+
+.titulocentralizado {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px;
+}
+
+em strong { /* CSS válido p/ toda a estrutura no HTML que segue a mesma sequência => em strong*/
+    color: rgb(211, 78, 78);
+}
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios{
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+ul {
+    vertical-align: top;
+    display: inline-block;
+    width: 20%;
+    margin-left: 15%;
+}
+
+.imgitem{
+    width: 50%;
+}
