@@ -1,52 +1,120 @@
-body {
-    
+header {
+    background-color: #CCCCCC;
+    padding: 20px 0;
 }
 
-#banner {
-    width: 100%;
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto; /* centraliza com auto */
 }
 
-.principal{
-    background-color: #cccccc;
-    padding: 30px;
+nav {
+    position: absolute; /* static = ponto padrão; relative = a partir do ponto; absolute = livre, a partir do último objeto da página (ou da tag relativa acima, como no caso da .caixa), considerar x,y,Z */
+    top: 110px;
+    right: 0;
 }
 
-.tituloprincipal {
-    padding-left: 20px;
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.titulocentralizado {
-    text-align: center;
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none; /* remove underline on the text */
 }
 
-p {
-    text-align: center;
+nav a:hover {
+    color: brown;
+    text-decoration: underline;
 }
 
-#missao {
-    font-size: 20px;
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0px 50px 0px;
 }
 
-em strong { /* CSS válido p/ toda a estrutura no HTML que segue a mesma sequência => em strong*/
-    color: rgb(211, 78, 78);
-}
-
-.itens {
-    font-style: italic;
-}
-
-.beneficios {
-    background-color: #ffffff;
-    padding: 20px;
-}
-
-ul {
-    vertical-align: top;
+.produtos li {
     display: inline-block;
-    width: 20%;
-    margin-left: 15%;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* adições em px são agregadas dentro do percentual definido - do width neste exemplo. */
+    border: 2px solid brown;
+    border-radius: 10px; /* pode ser declarado um valor para cada canto */
 }
 
-.imgbeneficios {
+.produtos li:hover {
+    border-color: red;
+}
+
+.produtos li:hover h2 {
+    font-size: 32px;
+}
+
+.produtos li:active {
+    border-color: greenyellow;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produtos-descricao {
+    font-size: 18px;
+}
+
+.produtos-preco {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("../images/bg.jpg");
+}
+
+footer p { /* ou poderia criar uma classe para copyright e definir as configurações */
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form p { /* com vírgula mais de um item pode utilizar a mesma configuração de CSS */
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 10px;
+    padding: 10px 25px;
     width: 50%;
 }
+
+.checkbox {
+    margin: 15px 10px 15px 0;
+}
+
+
+
+/* BLOCK 100% da largura da pagina. INLINE 100% do tamanho do conteúdo */
