@@ -98,7 +98,7 @@ form {
     margin: 40px 0;
 }
 
-form label, form p { /* com vírgula mais de um item pode utilizar a mesma configuração de CSS */
+form label, form legend { /* com vírgula mais de um item pode utilizar a mesma configuração de CSS */
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -115,6 +115,37 @@ form label, form p { /* com vírgula mais de um item pode utilizar a mesma confi
     margin: 15px 10px 15px 0;
 }
 
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    transition: 0.5s background;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.1);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
 
 
 /* BLOCK 100% da largura da pagina. INLINE 100% do tamanho do conteúdo */

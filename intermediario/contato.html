@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="caixa">
-                <h1><img src="images/logo.png"></h1>
+                <h1><img src="images/logo.png" alt="Logotipo"></h1>
 
                 <nav>
                     <ul>
@@ -24,19 +24,20 @@
         <main>
             <form>
                 <label for="nomeCompleto">Nome Completo: </label>
-                <input class="input-padrao" type="text" id="nomeCompleto" required>
+                <input class="input-padrao" type="text" id="nomeCompleto" required placeholder="Seu nome">
 
                 <label for="email">Email: </label>
-                <input class="input-padrao" type="mail" id="email" required>
+                <input class="input-padrao" type="email" id="email" required placeholder="email@dominio.com">
+                <!-- os types influenciam no 'required' quando o usuário digita as informações, ex: email sem @ retorna erro através do 'required' -->
 
                 <label for="telefone">Telefone: </label>
-                <input class="input-padrao" type="tel" id="telefone" required>
+                <input class="input-padrao" type="tel" id="telefone" required placeholder="(55)5555-5555">
 
                 <label for="areaTexto">Mensagem: </label>
                 <textarea class="input-padrao" cols="30" rows="10" id="areaTexto"></textarea required>
 
-                <div>
-                    <p>Como prefere receber um retorno?</p>
+                <fieldset>
+                    <legend>Como prefere receber um retorno?</legend>
 
                     <label for="radioEmail">
                         <input type="radio" name="contato" value="email" id="radioEmail">
@@ -51,30 +52,54 @@
                     
 
                     <label for="whatsApp">
-                        <input type="radio" name="contato" value="whatsapp" id="whatsApp">
+                        <input type="radio" name="contato" value="whatsapp" id="whatsApp" checked>
                         WhatsApp
                     </label>
-                </div>
+                </fieldset>
 
-                <div>
-                    <p>Qual o horário de sua preferencia?</p>
+                <fieldset>
+                    <legend>Qual o horário de sua preferencia?</legend>
                     <select>
                         <option>Manhã</option>
                         <option>Tarde</option>
                         <option>Noite</option>
                     </select>
-                </div>
+                </fieldset>
 
                 <label>
-                    <input class="checkbox" type="checkbox">Gostaria de receber nossas novidades por e-mail?
+                    <input class="checkbox" type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?
                 </label>
 
-                <input type="submit" value="Enviar Formulário">
+                <input class="enviar" type="submit" value="Enviar Formulário">
             </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h-20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h-20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h-20h</td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
 
         <footer>
-            <img src="images/logo-branco.png">
+            <img src="images/logo-branco.png" alt="Logotipo">
             <p>&copy; Copyright Barbearia Alura 2021</p>
         </footer>
     </body>
